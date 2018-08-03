@@ -117,7 +117,7 @@ class WidgetMixinTest(test.TestCase):  # noqa
     def test_widget_renders_without_attrs(self):
         """Assert that render will fallback to field name if no id."""
         class BaseWidget(object):
-            def render(self, name, value, attrs=None):
+            def render(self, name, value, attrs=None, renderer=None):
                 return ''
 
         class Widget(WidgetMixin, BaseWidget):
