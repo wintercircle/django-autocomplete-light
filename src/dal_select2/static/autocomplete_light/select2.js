@@ -64,6 +64,7 @@
         }
 
         $(this).select2({
+            width: element.attr('data-width') || 'resolve',
             tokenSeparators: element.attr('data-tags') ? [','] : null,
             debug: true,
             placeholder: element.attr('data-placeholder') || '',
