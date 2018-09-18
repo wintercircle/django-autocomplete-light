@@ -6,4 +6,4 @@ var yl = yl || {};
 // namespace and restore the original values of window.$ and window.jQuery.
 // This is necessary so that code which uses a version of jQuery that may
 // have been installed up-page gets the version it expects.
-yl.jQuery = django.jQuery.noConflict(true);
+yl.jQuery = django.jQuery;
